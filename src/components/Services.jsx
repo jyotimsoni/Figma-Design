@@ -39,18 +39,18 @@ const StarRating = ({ rating }) => {
       stars.push(<span key={i}>☆</span>);
     }
   }
-  return <div className="text-blue-600 text-lg">{stars}</div>;
+  return <div className=" text-red-600">{stars}</div>;
 };
 
 const Service = () => {
   return (
     <div className="py-12 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-blue-900">
-          Our Washing <span className="text-gray-900">Services</span>
+        <h2 className="text-4xl font-bold  text-red-600">
+          Our Washing <span className=" text-red-600">Services</span>
         </h2>
-        <p className="mt-2 text-sm text-gray-500 uppercase">
-          With <span className="text-blue-700 font-semibold">Modern Equipment</span>
+        <p className="mt-2 text-sm   text-red-600 uppercase">
+          With <span className="text-red-600 font-semibold">Modern Equipment</span>
         </p>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
@@ -59,8 +59,8 @@ const Service = () => {
               className="bg-white rounded-xl shadow hover:shadow-md transition duration-300 p-6 text-center"
             >
               <div className="text-black mb-4">{service.icon}</div>
-              <h3 className="text-blue-900 font-semibold mb-2">{service.title}</h3>
-              <p className="text-sm text-gray-600 mb-4">{service.description}</p>
+              <h3 className=" text-gray-600 font-semibold mb-2">{service.title}</h3>
+              <p className="text-sm  text-gray-600">{service.description}</p>
               <StarRating rating={service.rating} />
             </div>
           ))}

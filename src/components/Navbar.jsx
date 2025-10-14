@@ -1,19 +1,20 @@
-import React from "react";
+import React from 'react';
 
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <header className="bg-red-600 text-white py-4">
-      <div className="max-w-6xl mx-auto flex justify-between items-center px-6">
-        <h1 className="text-2xl font-bold">Logo</h1>
-        <nav className="space-x-6 hidden md:block">
-          <a href="#mission" className="hover:underline">Mission</a>
-          <a href="#vision" className="hover:underline">Vision</a>
-          <a href="#services" className="hover:underline">Services</a>
-          <a href="#contact" className="hover:underline">Contact</a>
-
-          <button><a href="#about" className="hover:underline">Profile</a></button> 
-        </nav>
+    <nav className="bg-red-600 px-12 py-4 flex items-center justify-between">
+      {/* px-12 = 48px horizontal padding */}
+      <div className="text-white font-bold text-xl">Logo</div>
+      <div className="flex space-x-8 items-center text-base">
+        <span className="text-white">Services</span>
+        <span className="bg-white text-red-600 px-4 py-2 rounded font-semibold">About Us</span>
+        <span className="text-white">Contact Us</span>
+        <span className="bg-red-700 text-white px-4 py-2 rounded shadow flex items-center gap-2">
+          <span className="text-white">Profile</span>
+        </span>
       </div>
-    </header>
+    </nav>
   );
-}
+};
+
+export default Navbar;

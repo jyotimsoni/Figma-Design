@@ -10,12 +10,12 @@ const WhoWeAre = () => {
           {/* Image */}
           <div className="flex-shrink-0">
             <img
-              src="image10.jpg"
+              src="image15.png"
               alt="Founder"
               className="rounded-full w-48 h-48 object-cover"
             />
             <div className="mt-3 text-center md:text-left">
-              <h3 className="text-[#003366] font-bold uppercase text-sm">
+              <h3 className="bg-red-600 font-bold uppercase text-sm">
                 LUKA LOJK
               </h3>
               <p className="text-xs text-gray-600">FOUNDER & CEO</p>
@@ -24,7 +24,7 @@ const WhoWeAre = () => {
 
           {/* Content */}
           <div className="flex-1">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#003366] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#ce282a] mb-4">
               Who We Are?
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6">
@@ -34,7 +34,7 @@ const WhoWeAre = () => {
               innovative approach and customer-centric services.”
             </p>
 
-            <div className="flex items-start gap-3 text-[#003366] font-semibold">
+            <div className="flex items-start gap-3 text-[#db1d1d] font-semibold">
               <FaQuoteLeft className="text-2xl mt-1" />
               <p className="italic">
                 "Drive clean, drive happy; we make your journey shine."
@@ -45,7 +45,7 @@ const WhoWeAre = () => {
 
         {/* FAQ Section */}
         <div className="mt-16">
-          <h3 className="text-2xl font-bold text-[#003366] mb-6">
+          <h3 className="text-2xl font-bold text-[#e22b2b] mb-6">
             Frequently Asked Questions (FAQs)
           </h3>
 
