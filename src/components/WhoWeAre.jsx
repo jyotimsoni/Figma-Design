@@ -3,31 +3,33 @@ import { FaQuoteLeft } from "react-icons/fa";
 
 const WhoWeAre = () => {
   return (
-    <div className="bg-gray-50 min-h-screen py-12 px-6">
+    <section className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-16 min-h-screen">
       <div className="max-w-6xl mx-auto">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           {/* Image */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 text-center md:text-left">
             <img
               src="image15.png"
               alt="Founder"
-              className="rounded-full w-48 h-48 object-cover"
+              className="rounded-full w-36 sm:w-40 md:w-48 h-36 sm:h-40 md:h-48 object-cover mx-auto md:mx-0"
             />
-            <div className="mt-3 text-center md:text-left">
-              <h3 className="bg-red-600 font-bold uppercase text-sm">
+            <div className="mt-3">
+              <h3 className="bg-red-600 inline-block px-2 py-1 font-bold uppercase text-xs sm:text-sm">
                 LUKA LOJK
               </h3>
-              <p className="text-xs text-gray-600">FOUNDER & CEO</p>
+              <p className="text-xs sm:text-sm text-gray-600 mt-1">
+                FOUNDER & CEO
+              </p>
             </div>
           </div>
 
           {/* Content */}
           <div className="flex-1">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#ce282a] mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#ce282a] mb-4">
               Who We Are?
             </h2>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed text-sm sm:text-base mb-6">
               “Our aim is to redefine car care, providing unmatched quality and
               convenience. We strive to ensure a seamless, top-tier experience
               for our customers, setting new standards in the industry with our
@@ -35,8 +37,8 @@ const WhoWeAre = () => {
             </p>
 
             <div className="flex items-start gap-3 text-[#db1d1d] font-semibold">
-              <FaQuoteLeft className="text-2xl mt-1" />
-              <p className="italic">
+              <FaQuoteLeft className="text-xl sm:text-2xl mt-1" />
+              <p className="italic text-sm sm:text-base">
                 "Drive clean, drive happy; we make your journey shine."
               </p>
             </div>
@@ -44,27 +46,27 @@ const WhoWeAre = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-[#e22b2b] mb-6">
+        <div className="mt-12 sm:mt-16">
+          <h3 className="text-xl sm:text-2xl font-bold text-[#e22b2b] mb-6">
             Frequently Asked Questions (FAQs)
           </h3>
 
-          <div className="space-y-6 text-gray-800">
+          <div className="space-y-6 text-gray-800 text-sm sm:text-base">
             <div>
               <p className="font-semibold">
-                Ques. What’s the recommended frequency for a deep clean ?
+                Ques. What’s the recommended frequency for a deep clean?
               </p>
-              <p className="text-sm">
-                Ans. We suggest a deep clean every 2-3 months, depending on your
-                usage and environmental exposure.
+              <p className="mt-1">
+                Ans. We suggest a deep clean every 2-3 months, depending on
+                your usage and environmental exposure.
               </p>
             </div>
 
             <div>
               <p className="font-semibold">
-                Ques. Are the cleaning products safe for all car finishes ?
+                Ques. Are the cleaning products safe for all car finishes?
               </p>
-              <p className="text-sm">
+              <p className="mt-1">
                 Ans. Yes, our products are safe and tailored for various car
                 finishes, ensuring no damage to your vehicle.
               </p>
@@ -75,7 +77,7 @@ const WhoWeAre = () => {
                 Ques. Do you offer any warranty or guarantee on the cleaning
                 service?
               </p>
-              <p className="text-sm">
+              <p className="mt-1">
                 Ans. We take pride in our work and offer a satisfaction
                 guarantee. If you’re not happy, we’ll make it right.
               </p>
@@ -83,7 +85,7 @@ const WhoWeAre = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
